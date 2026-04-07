@@ -9,16 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            MorphoWorkbenchRootView()
+                .tabItem {
+                    Label("Workbench", systemImage: "cube.transparent")
+                }
+
+            LispPadDevRootView()
+                .tabItem {
+                    Label("Runtime Lab", systemImage: "terminal")
+                }
         }
-        .padding()
+        .tint(MorphoTheme.accent)
     }
 }
 
 #Preview {
     ContentView()
+        .environment(MorphoWorkbenchState())
 }

@@ -1,0 +1,5 @@
+.DS_Store
+
+# Local SwiftPM/CMake build products
+Packages/ManifoldCore/.build/
+Packages/ManifoldCore/.swiftpm/

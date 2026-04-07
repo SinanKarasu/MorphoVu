@@ -23,6 +23,11 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXBuildFile section */
+		B10000000000000000000001 /* LispPadCore in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000001 /* LispPadCore */; };
+		B10000000000000000000002 /* ManifoldKit in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000002 /* ManifoldKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F71EBAA62F7B181200FDC9C2 /* MorphoVu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorphoVu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71EBAB32F7B181300FDC9C2 /* MorphoVuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorphoVuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10000000000000000000001 /* LispPadCore in Frameworks */,
+				B10000000000000000000002 /* ManifoldKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,8 @@
 			);
 			name = MorphoVu;
 			packageProductDependencies = (
+				B40000000000000000000001 /* LispPadCore */,
+				B40000000000000000000002 /* ManifoldKit */,
 			);
 			productName = MorphoVu;
 			productReference = F71EBAA62F7B181200FDC9C2 /* MorphoVu.app */;
@@ -195,6 +204,10 @@
 			);
 			mainGroup = F71EBA9D2F7B181100FDC9C2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B30000000000000000000001 /* XCLocalSwiftPackageReference "../../Packages/LispPadCore" */,
+				B30000000000000000000002 /* XCLocalSwiftPackageReference "Packages/ManifoldCore" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F71EBAA72F7B181200FDC9C2 /* Products */;
 			projectDirPath = "";
@@ -422,6 +435,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -466,6 +480,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -491,6 +506,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -517,6 +533,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -542,6 +559,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -567,6 +585,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -615,6 +634,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		B30000000000000000000001 /* XCLocalSwiftPackageReference "../../Packages/LispPadCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../Packages/LispPadCore;
+		};
+		B30000000000000000000002 /* XCLocalSwiftPackageReference "Packages/ManifoldCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ManifoldCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B40000000000000000000001 /* LispPadCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B30000000000000000000001 /* XCLocalSwiftPackageReference "../../Packages/LispPadCore" */;
+			productName = LispPadCore;
+		};
+		B40000000000000000000002 /* ManifoldKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B30000000000000000000002 /* XCLocalSwiftPackageReference "Packages/ManifoldCore" */;
+			productName = ManifoldKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F71EBA9E2F7B181100FDC9C2 /* Project object */;
 }
