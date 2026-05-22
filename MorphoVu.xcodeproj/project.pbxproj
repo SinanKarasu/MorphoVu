@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B10000000000000000000001 /* LispPadCore in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000001 /* LispPadCore */; };
+		B10000000000000000000002 /* ManifoldKit in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000002 /* ManifoldKit */; };
+		B10000000000000000000003 /* TektonParsers in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000003 /* TektonParsers */; };
+		B10000000000000000000004 /* CPPSymEngine in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000004 /* CPPSymEngine */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F71EBAB42F7B181300FDC9C2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -22,11 +29,6 @@
 			remoteInfo = MorphoVu;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXBuildFile section */
-		B10000000000000000000001 /* LispPadCore in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000001 /* LispPadCore */; };
-		B10000000000000000000002 /* ManifoldKit in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000002 /* ManifoldKit */; };
-/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F71EBAA62F7B181200FDC9C2 /* MorphoVu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorphoVu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,8 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10000000000000000000004 /* CPPSymEngine in Frameworks */,
 				B10000000000000000000001 /* LispPadCore in Frameworks */,
 				B10000000000000000000002 /* ManifoldKit in Frameworks */,
+				B10000000000000000000003 /* TektonParsers in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +113,7 @@
 				F71EBAA22F7B181200FDC9C2 /* Sources */,
 				F71EBAA32F7B181200FDC9C2 /* Frameworks */,
 				F71EBAA42F7B181200FDC9C2 /* Resources */,
+				B50000000000000000000001 /* Sync PyDE Python Support */,
 			);
 			buildRules = (
 			);
@@ -119,8 +124,10 @@
 			);
 			name = MorphoVu;
 			packageProductDependencies = (
+				B40000000000000000000004 /* CPPSymEngine */,
 				B40000000000000000000001 /* LispPadCore */,
 				B40000000000000000000002 /* ManifoldKit */,
+				B40000000000000000000003 /* TektonParsers */,
 			);
 			productName = MorphoVu;
 			productReference = F71EBAA62F7B181200FDC9C2 /* MorphoVu.app */;
@@ -205,8 +212,10 @@
 			mainGroup = F71EBA9D2F7B181100FDC9C2;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				B30000000000000000000004 /* XCLocalSwiftPackageReference "../../Packages/CPPSymEngine" */,
 				B30000000000000000000001 /* XCLocalSwiftPackageReference "../../Packages/LispPadCore" */,
-				B30000000000000000000002 /* XCLocalSwiftPackageReference "Packages/ManifoldCore" */,
+				B30000000000000000000002 /* XCLocalSwiftPackageReference "../../Packages/ManifoldCore" */,
+				B30000000000000000000003 /* XCLocalSwiftPackageReference "../../Packages/TektonParsers" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F71EBAA72F7B181200FDC9C2 /* Products */;
@@ -243,6 +252,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B50000000000000000000001 /* Sync PyDE Python Support */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../../_Experiments/SwiftPython/PyDE-master/app",
+				"$(SRCROOT)/../../_Experiments/SwiftPython/PyDE-master/app_packages",
+			);
+			name = "Sync PyDE Python Support";
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/app",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/app_packages",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\nPYDE_ROOT=\"${SRCROOT}/../../_Experiments/SwiftPython/PyDE-master\"\nDEST=\"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"\nif [ ! -d \"${PYDE_ROOT}\" ]; then\n    echo \"warning: PyDE root not found at ${PYDE_ROOT}; skipping Python support sync\"\n    exit 0\nfi\nmkdir -p \"${DEST}\"\nfor name in app app_packages; do\n    SRC=\"${PYDE_ROOT}/${name}\"\n    if [ -d \"${SRC}\" ]; then\n        rm -rf \"${DEST}/${name}\"\n        /usr/bin/ditto \"${SRC}\" \"${DEST}/${name}\"\n    fi\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F71EBAA22F7B181200FDC9C2 /* Sources */ = {
@@ -406,10 +436,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4HVP45GV3U;
-				ENABLE_APP_SANDBOX = YES;
+					ENABLE_APP_SANDBOX = YES;
+					"ENABLE_APP_SANDBOX[sdk=macosx*]" = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+					ENABLE_USER_SELECTED_FILES = readonly;
+					"ENABLE_USER_SELECTED_FILES[sdk=macosx*]" = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -454,6 +487,7 @@
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -640,9 +674,17 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../../Packages/LispPadCore;
 		};
-		B30000000000000000000002 /* XCLocalSwiftPackageReference "Packages/ManifoldCore" */ = {
+		B30000000000000000000002 /* XCLocalSwiftPackageReference "../../Packages/ManifoldCore" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = Packages/ManifoldCore;
+			relativePath = ../../Packages/ManifoldCore;
+		};
+		B30000000000000000000003 /* XCLocalSwiftPackageReference "../../Packages/TektonParsers" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../Packages/TektonParsers;
+		};
+		B30000000000000000000004 /* XCLocalSwiftPackageReference "../../Packages/CPPSymEngine" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../Packages/CPPSymEngine;
 		};
 /* End XCLocalSwiftPackageReference section */
 
@@ -654,8 +696,18 @@
 		};
 		B40000000000000000000002 /* ManifoldKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B30000000000000000000002 /* XCLocalSwiftPackageReference "Packages/ManifoldCore" */;
+			package = B30000000000000000000002 /* XCLocalSwiftPackageReference "../../Packages/ManifoldCore" */;
 			productName = ManifoldKit;
+		};
+		B40000000000000000000003 /* TektonParsers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B30000000000000000000003 /* XCLocalSwiftPackageReference "../../Packages/TektonParsers" */;
+			productName = TektonParsers;
+		};
+		B40000000000000000000004 /* CPPSymEngine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B30000000000000000000004 /* XCLocalSwiftPackageReference "../../Packages/CPPSymEngine" */;
+			productName = CPPSymEngine;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
