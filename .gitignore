@@ -3,3 +3,99 @@
 # Local SwiftPM/CMake build products
 Packages/ManifoldCore/.build/
 Packages/ManifoldCore/.swiftpm/
+
+Documentation/**/_minted/
+Documentation/**/*.aux
+Documentation/**/*.log
+Documentation/**/*.synctex.gz
+Documentation/**/*.out
+
+
+# The rest is standard for a modern Swift/Xcode + LaTeX + minted repo
+
+# =========================================================
+# Xcode
+# =========================================================
+
+.DS_Store
+
+build/
+DerivedData/
+
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# SwiftPM
+.build/
+.swiftpm/
+
+# Xcode user state
+*.xcuserstate
+
+# =========================================================
+# Swift testing / coverage
+# =========================================================
+
+*.profdata
+*.xccovreport
+*.xccovarchive
+
+# =========================================================
+# TeX / LaTeX
+# =========================================================
+
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.xdv
+
+# latexmk
+*.dvi
+
+# minted
+_minted/
+*.minted
+
+# TikZ externalization (if later used)
+tikzcache/
+*.md5
+
+# =========================================================
+# Editors
+# =========================================================
+
+.vscode/
+.idea/
+
+# =========================================================
+# Temporary files
+# =========================================================
+
+*~
+*.swp
+*.tmp
