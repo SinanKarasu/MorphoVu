@@ -11,6 +11,8 @@
 		B10000000000000000000002 /* ManifoldKit in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000002 /* ManifoldKit */; };
 		B10000000000000000000003 /* TektonParsers in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000003 /* TektonParsers */; };
 		B10000000000000000000004 /* CPPSymEngine in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000004 /* CPPSymEngine */; };
+		F795E8022FEB51DC00D972D7 /* MorphoVuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795E8012FEB51DC00D972D7 /* MorphoVuTests.swift */; };
+		F795E8092FEB70CA00D972D7 /* DrJitKit in Frameworks */ = {isa = PBXBuildFile; productRef = F795E8082FEB70CA00D972D7 /* DrJitKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 		F71EBAA62F7B181200FDC9C2 /* MorphoVu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorphoVu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71EBAB32F7B181300FDC9C2 /* MorphoVuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorphoVuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71EBABD2F7B181300FDC9C2 /* MorphoVuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorphoVuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F795E8012FEB51DC00D972D7 /* MorphoVuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphoVuTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -61,6 +64,7 @@
 			files = (
 				B10000000000000000000004 /* CPPSymEngine in Frameworks */,
 				B10000000000000000000001 /* LispPadCore in Frameworks */,
+				F795E8092FEB70CA00D972D7 /* DrJitKit in Frameworks */,
 				B10000000000000000000002 /* ManifoldKit in Frameworks */,
 				B10000000000000000000003 /* TektonParsers in Frameworks */,
 			);
@@ -86,10 +90,11 @@
 		F71EBA9D2F7B181100FDC9C2 = {
 			isa = PBXGroup;
 			children = (
-				F71EBAA82F7B181200FDC9C2 /* MorphoVu */,
+				F795E8012FEB51DC00D972D7 /* MorphoVuTests.swift */,
 				F71EBAB62F7B181300FDC9C2 /* MorphoVuTests */,
 				F71EBAC02F7B181300FDC9C2 /* MorphoVuUITests */,
 				F71EBAA72F7B181200FDC9C2 /* Products */,
+				F71EBAA82F7B181200FDC9C2 /* MorphoVu */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +133,7 @@
 				B40000000000000000000001 /* LispPadCore */,
 				B40000000000000000000002 /* ManifoldKit */,
 				B40000000000000000000003 /* TektonParsers */,
+				F795E8082FEB70CA00D972D7 /* DrJitKit */,
 			);
 			productName = MorphoVu;
 			productReference = F71EBAA62F7B181200FDC9C2 /* MorphoVu.app */;
@@ -216,6 +222,7 @@
 				B30000000000000000000001 /* XCLocalSwiftPackageReference "../../Packages/LispPadCore" */,
 				B30000000000000000000002 /* XCLocalSwiftPackageReference "../../Packages/ManifoldCore" */,
 				B30000000000000000000003 /* XCLocalSwiftPackageReference "../../Packages/TektonParsers" */,
+				F795E8072FEB70CA00D972D7 /* XCLocalSwiftPackageReference "../../Packages/DrJitCore" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F71EBAA72F7B181200FDC9C2 /* Products */;
@@ -286,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F795E8022FEB51DC00D972D7 /* MorphoVuTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,13 +444,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4HVP45GV3U;
-					ENABLE_APP_SANDBOX = YES;
-					"ENABLE_APP_SANDBOX[sdk=macosx*]" = NO;
+				ENABLE_APP_SANDBOX = YES;
+				"ENABLE_APP_SANDBOX[sdk=macosx*]" = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-					ENABLE_USER_SELECTED_FILES = readonly;
-					"ENABLE_USER_SELECTED_FILES[sdk=macosx*]" = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				"ENABLE_USER_SELECTED_FILES[sdk=macosx*]" = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -686,6 +694,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../../Packages/CPPSymEngine;
 		};
+		F795E8072FEB70CA00D972D7 /* XCLocalSwiftPackageReference "../../Packages/DrJitCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../Packages/DrJitCore;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -708,6 +720,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B30000000000000000000004 /* XCLocalSwiftPackageReference "../../Packages/CPPSymEngine" */;
 			productName = CPPSymEngine;
+		};
+		F795E8082FEB70CA00D972D7 /* DrJitKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DrJitKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

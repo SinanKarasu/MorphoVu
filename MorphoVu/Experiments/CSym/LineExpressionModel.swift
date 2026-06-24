@@ -101,17 +101,21 @@ struct LineExpressionModel {
         xMax: Double,
         sampleCount: Int
     ) throws -> LinePlotData {
+        // DrJit: vectorised GPU eval, handles non-linear expressions (sin, cos, poly, …)
+        if let drjitPlot = try? sampleLine3DWithDrJit(
+            a: a, b: b, xMin: xMin, xMax: xMax, sampleCount: sampleCount
+        ) {
+            return drjitPlot
+        }
+        // SymEngine: symbolic (macOS only) — gives derivative info; linear-only
         #if os(macOS)
         if let symbolicPlot = try? sampleLine3DWithSymEngine(
-            a: a,
-            b: b,
-            xMin: xMin,
-            xMax: xMax,
-            sampleCount: sampleCount
+            a: a, b: b, xMin: xMin, xMax: xMax, sampleCount: sampleCount
         ) {
             return symbolicPlot
         }
         #endif
+        // Numeric: CPU fallback; linear-only
         return try sampleLine3DNumeric(a: a, b: b, xMin: xMin, xMax: xMax, sampleCount: sampleCount)
     }
 
