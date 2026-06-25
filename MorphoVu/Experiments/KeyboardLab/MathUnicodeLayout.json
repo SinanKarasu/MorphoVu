@@ -1,0 +1,2270 @@
+{
+  "name": "MathUnicode",
+  "sourceURL": "http://www.cl.cam.ac.uk/~jpw48/MathUnicode.keylayout",
+  "stackExchangeURL": "https://tex.stackexchange.com/questions/110042/entering-unicode-math-symbols-into-latex-direct-from-keyboard-on-a-mac#110043",
+  "iconName": "MathUnicode.icon.png",
+  "layers": [
+    {
+      "id": "default",
+      "title": "Default",
+      "rows": [
+        [
+          {
+            "kind": "mapped",
+            "code": 50,
+            "width": 1.0,
+            "defaultLegend": "`",
+            "shiftLegend": "~",
+            "output": "`",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 18,
+            "width": 1.0,
+            "defaultLegend": "1",
+            "shiftLegend": "!",
+            "output": "1",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 19,
+            "width": 1.0,
+            "defaultLegend": "2",
+            "shiftLegend": "@",
+            "output": "2",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 20,
+            "width": 1.0,
+            "defaultLegend": "3",
+            "shiftLegend": "£",
+            "output": "3",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 21,
+            "width": 1.0,
+            "defaultLegend": "4",
+            "shiftLegend": "$",
+            "output": "4",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 23,
+            "width": 1.0,
+            "defaultLegend": "5",
+            "shiftLegend": "%",
+            "output": "5",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 22,
+            "width": 1.0,
+            "defaultLegend": "6",
+            "shiftLegend": "^",
+            "output": "6",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 26,
+            "width": 1.0,
+            "defaultLegend": "7",
+            "shiftLegend": "&",
+            "output": "7",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 28,
+            "width": 1.0,
+            "defaultLegend": "8",
+            "shiftLegend": "*",
+            "output": "8",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 25,
+            "width": 1.0,
+            "defaultLegend": "9",
+            "shiftLegend": "(",
+            "output": "9",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 29,
+            "width": 1.0,
+            "defaultLegend": "0",
+            "shiftLegend": ")",
+            "output": "0",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 27,
+            "width": 1.0,
+            "defaultLegend": "-",
+            "shiftLegend": "_",
+            "output": "-",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 24,
+            "width": 1.0,
+            "defaultLegend": "=",
+            "shiftLegend": "+",
+            "output": "=",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "fixed",
+            "label": "delete",
+            "width": 1.9
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "tab",
+            "width": 1.5
+          },
+          {
+            "kind": "mapped",
+            "code": 12,
+            "width": 1.0,
+            "defaultLegend": "q",
+            "shiftLegend": "Q",
+            "output": "q",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 13,
+            "width": 1.0,
+            "defaultLegend": "w",
+            "shiftLegend": "W",
+            "output": "w",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 14,
+            "width": 1.0,
+            "defaultLegend": "e",
+            "shiftLegend": "E",
+            "output": "e",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 15,
+            "width": 1.0,
+            "defaultLegend": "r",
+            "shiftLegend": "R",
+            "output": "r",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 17,
+            "width": 1.0,
+            "defaultLegend": "t",
+            "shiftLegend": "T",
+            "output": "t",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 16,
+            "width": 1.0,
+            "defaultLegend": "y",
+            "shiftLegend": "Y",
+            "output": "y",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 32,
+            "width": 1.0,
+            "defaultLegend": "u",
+            "shiftLegend": "U",
+            "output": "u",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 34,
+            "width": 1.0,
+            "defaultLegend": "i",
+            "shiftLegend": "I",
+            "output": "i",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 31,
+            "width": 1.0,
+            "defaultLegend": "o",
+            "shiftLegend": "O",
+            "output": "o",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 35,
+            "width": 1.0,
+            "defaultLegend": "p",
+            "shiftLegend": "P",
+            "output": "p",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 33,
+            "width": 1.0,
+            "defaultLegend": "[",
+            "shiftLegend": "{",
+            "output": "[",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 30,
+            "width": 1.0,
+            "defaultLegend": "]",
+            "shiftLegend": "}",
+            "output": "]",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 42,
+            "width": 1.3,
+            "defaultLegend": "\\",
+            "shiftLegend": "|",
+            "output": "\\",
+            "note": "",
+            "deadState": null
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "caps",
+            "width": 1.8
+          },
+          {
+            "kind": "mapped",
+            "code": 0,
+            "width": 1.0,
+            "defaultLegend": "a",
+            "shiftLegend": "A",
+            "output": "a",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 1,
+            "width": 1.0,
+            "defaultLegend": "s",
+            "shiftLegend": "S",
+            "output": "s",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 2,
+            "width": 1.0,
+            "defaultLegend": "d",
+            "shiftLegend": "D",
+            "output": "d",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 3,
+            "width": 1.0,
+            "defaultLegend": "f",
+            "shiftLegend": "F",
+            "output": "f",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 5,
+            "width": 1.0,
+            "defaultLegend": "g",
+            "shiftLegend": "G",
+            "output": "g",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 4,
+            "width": 1.0,
+            "defaultLegend": "h",
+            "shiftLegend": "H",
+            "output": "h",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 38,
+            "width": 1.0,
+            "defaultLegend": "j",
+            "shiftLegend": "J",
+            "output": "j",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 40,
+            "width": 1.0,
+            "defaultLegend": "k",
+            "shiftLegend": "K",
+            "output": "k",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 37,
+            "width": 1.0,
+            "defaultLegend": "l",
+            "shiftLegend": "L",
+            "output": "l",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 41,
+            "width": 1.0,
+            "defaultLegend": ";",
+            "shiftLegend": ":",
+            "output": ";",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 39,
+            "width": 1.0,
+            "defaultLegend": "'",
+            "shiftLegend": "\"",
+            "output": "'",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "fixed",
+            "label": "return",
+            "width": 2.1
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "shift",
+            "width": 2.2
+          },
+          {
+            "kind": "mapped",
+            "code": 6,
+            "width": 1.0,
+            "defaultLegend": "z",
+            "shiftLegend": "Z",
+            "output": "z",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 7,
+            "width": 1.0,
+            "defaultLegend": "x",
+            "shiftLegend": "X",
+            "output": "x",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 8,
+            "width": 1.0,
+            "defaultLegend": "c",
+            "shiftLegend": "C",
+            "output": "c",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 9,
+            "width": 1.0,
+            "defaultLegend": "v",
+            "shiftLegend": "V",
+            "output": "v",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 11,
+            "width": 1.0,
+            "defaultLegend": "b",
+            "shiftLegend": "B",
+            "output": "b",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 45,
+            "width": 1.0,
+            "defaultLegend": "n",
+            "shiftLegend": "N",
+            "output": "n",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 46,
+            "width": 1.0,
+            "defaultLegend": "m",
+            "shiftLegend": "M",
+            "output": "m",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 43,
+            "width": 1.0,
+            "defaultLegend": ",",
+            "shiftLegend": "<",
+            "output": ",",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 47,
+            "width": 1.0,
+            "defaultLegend": ".",
+            "shiftLegend": "gt",
+            "output": ".",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 44,
+            "width": 1.0,
+            "defaultLegend": "/",
+            "shiftLegend": "?",
+            "output": "/",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "fixed",
+            "label": "shift",
+            "width": 2.7
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "fn",
+            "width": 1.2
+          },
+          {
+            "kind": "fixed",
+            "label": "control",
+            "width": 1.3
+          },
+          {
+            "kind": "fixed",
+            "label": "option",
+            "width": 1.3
+          },
+          {
+            "kind": "fixed",
+            "label": "command",
+            "width": 1.5
+          },
+          {
+            "kind": "fixed",
+            "label": "space",
+            "width": 6.1
+          },
+          {
+            "kind": "fixed",
+            "label": "command",
+            "width": 1.5
+          },
+          {
+            "kind": "fixed",
+            "label": "option",
+            "width": 1.3
+          }
+        ]
+      ]
+    },
+    {
+      "id": "shift",
+      "title": "Shift",
+      "rows": [
+        [
+          {
+            "kind": "mapped",
+            "code": 50,
+            "width": 1.0,
+            "defaultLegend": "`",
+            "shiftLegend": "~",
+            "output": "~",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 18,
+            "width": 1.0,
+            "defaultLegend": "1",
+            "shiftLegend": "!",
+            "output": "!",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 19,
+            "width": 1.0,
+            "defaultLegend": "2",
+            "shiftLegend": "@",
+            "output": "@",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 20,
+            "width": 1.0,
+            "defaultLegend": "3",
+            "shiftLegend": "£",
+            "output": "£",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 21,
+            "width": 1.0,
+            "defaultLegend": "4",
+            "shiftLegend": "$",
+            "output": "$",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 23,
+            "width": 1.0,
+            "defaultLegend": "5",
+            "shiftLegend": "%",
+            "output": "%",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 22,
+            "width": 1.0,
+            "defaultLegend": "6",
+            "shiftLegend": "^",
+            "output": "^",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 26,
+            "width": 1.0,
+            "defaultLegend": "7",
+            "shiftLegend": "&",
+            "output": "&",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 28,
+            "width": 1.0,
+            "defaultLegend": "8",
+            "shiftLegend": "*",
+            "output": "*",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 25,
+            "width": 1.0,
+            "defaultLegend": "9",
+            "shiftLegend": "(",
+            "output": "(",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 29,
+            "width": 1.0,
+            "defaultLegend": "0",
+            "shiftLegend": ")",
+            "output": ")",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 27,
+            "width": 1.0,
+            "defaultLegend": "-",
+            "shiftLegend": "_",
+            "output": "_",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 24,
+            "width": 1.0,
+            "defaultLegend": "=",
+            "shiftLegend": "+",
+            "output": "+",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "fixed",
+            "label": "delete",
+            "width": 1.9
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "tab",
+            "width": 1.5
+          },
+          {
+            "kind": "mapped",
+            "code": 12,
+            "width": 1.0,
+            "defaultLegend": "q",
+            "shiftLegend": "Q",
+            "output": "Q",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 13,
+            "width": 1.0,
+            "defaultLegend": "w",
+            "shiftLegend": "W",
+            "output": "W",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 14,
+            "width": 1.0,
+            "defaultLegend": "e",
+            "shiftLegend": "E",
+            "output": "E",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 15,
+            "width": 1.0,
+            "defaultLegend": "r",
+            "shiftLegend": "R",
+            "output": "R",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 17,
+            "width": 1.0,
+            "defaultLegend": "t",
+            "shiftLegend": "T",
+            "output": "T",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 16,
+            "width": 1.0,
+            "defaultLegend": "y",
+            "shiftLegend": "Y",
+            "output": "Y",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 32,
+            "width": 1.0,
+            "defaultLegend": "u",
+            "shiftLegend": "U",
+            "output": "U",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 34,
+            "width": 1.0,
+            "defaultLegend": "i",
+            "shiftLegend": "I",
+            "output": "I",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 31,
+            "width": 1.0,
+            "defaultLegend": "o",
+            "shiftLegend": "O",
+            "output": "O",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 35,
+            "width": 1.0,
+            "defaultLegend": "p",
+            "shiftLegend": "P",
+            "output": "P",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 33,
+            "width": 1.0,
+            "defaultLegend": "[",
+            "shiftLegend": "{",
+            "output": "{",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 30,
+            "width": 1.0,
+            "defaultLegend": "]",
+            "shiftLegend": "}",
+            "output": "}",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 42,
+            "width": 1.3,
+            "defaultLegend": "\\",
+            "shiftLegend": "|",
+            "output": "|",
+            "note": "",
+            "deadState": null
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "caps",
+            "width": 1.8
+          },
+          {
+            "kind": "mapped",
+            "code": 0,
+            "width": 1.0,
+            "defaultLegend": "a",
+            "shiftLegend": "A",
+            "output": "A",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 1,
+            "width": 1.0,
+            "defaultLegend": "s",
+            "shiftLegend": "S",
+            "output": "S",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 2,
+            "width": 1.0,
+            "defaultLegend": "d",
+            "shiftLegend": "D",
+            "output": "D",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 3,
+            "width": 1.0,
+            "defaultLegend": "f",
+            "shiftLegend": "F",
+            "output": "F",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 5,
+            "width": 1.0,
+            "defaultLegend": "g",
+            "shiftLegend": "G",
+            "output": "G",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 4,
+            "width": 1.0,
+            "defaultLegend": "h",
+            "shiftLegend": "H",
+            "output": "H",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 38,
+            "width": 1.0,
+            "defaultLegend": "j",
+            "shiftLegend": "J",
+            "output": "J",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 40,
+            "width": 1.0,
+            "defaultLegend": "k",
+            "shiftLegend": "K",
+            "output": "K",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 37,
+            "width": 1.0,
+            "defaultLegend": "l",
+            "shiftLegend": "L",
+            "output": "L",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 41,
+            "width": 1.0,
+            "defaultLegend": ";",
+            "shiftLegend": ":",
+            "output": ":",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 39,
+            "width": 1.0,
+            "defaultLegend": "'",
+            "shiftLegend": "\"",
+            "output": "\"",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "fixed",
+            "label": "return",
+            "width": 2.1
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "shift",
+            "width": 2.2
+          },
+          {
+            "kind": "mapped",
+            "code": 6,
+            "width": 1.0,
+            "defaultLegend": "z",
+            "shiftLegend": "Z",
+            "output": "Z",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 7,
+            "width": 1.0,
+            "defaultLegend": "x",
+            "shiftLegend": "X",
+            "output": "X",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 8,
+            "width": 1.0,
+            "defaultLegend": "c",
+            "shiftLegend": "C",
+            "output": "C",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 9,
+            "width": 1.0,
+            "defaultLegend": "v",
+            "shiftLegend": "V",
+            "output": "V",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 11,
+            "width": 1.0,
+            "defaultLegend": "b",
+            "shiftLegend": "B",
+            "output": "B",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 45,
+            "width": 1.0,
+            "defaultLegend": "n",
+            "shiftLegend": "N",
+            "output": "N",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 46,
+            "width": 1.0,
+            "defaultLegend": "m",
+            "shiftLegend": "M",
+            "output": "M",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 43,
+            "width": 1.0,
+            "defaultLegend": ",",
+            "shiftLegend": "<",
+            "output": "<",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 47,
+            "width": 1.0,
+            "defaultLegend": ".",
+            "shiftLegend": "gt",
+            "output": "gt",
+            "note": "action",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 44,
+            "width": 1.0,
+            "defaultLegend": "/",
+            "shiftLegend": "?",
+            "output": "?",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "fixed",
+            "label": "shift",
+            "width": 2.7
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "fn",
+            "width": 1.2
+          },
+          {
+            "kind": "fixed",
+            "label": "control",
+            "width": 1.3
+          },
+          {
+            "kind": "fixed",
+            "label": "option",
+            "width": 1.3
+          },
+          {
+            "kind": "fixed",
+            "label": "command",
+            "width": 1.5
+          },
+          {
+            "kind": "fixed",
+            "label": "space",
+            "width": 6.1
+          },
+          {
+            "kind": "fixed",
+            "label": "command",
+            "width": 1.5
+          },
+          {
+            "kind": "fixed",
+            "label": "option",
+            "width": 1.3
+          }
+        ]
+      ]
+    },
+    {
+      "id": "option",
+      "title": "Option",
+      "rows": [
+        [
+          {
+            "kind": "mapped",
+            "code": 50,
+            "width": 1.0,
+            "defaultLegend": "`",
+            "shiftLegend": "~",
+            "output": "“",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 18,
+            "width": 1.0,
+            "defaultLegend": "1",
+            "shiftLegend": "!",
+            "output": "¡",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 19,
+            "width": 1.0,
+            "defaultLegend": "2",
+            "shiftLegend": "@",
+            "output": "€",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 20,
+            "width": 1.0,
+            "defaultLegend": "3",
+            "shiftLegend": "£",
+            "output": "#",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 21,
+            "width": 1.0,
+            "defaultLegend": "4",
+            "shiftLegend": "$",
+            "output": "¢",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 23,
+            "width": 1.0,
+            "defaultLegend": "5",
+            "shiftLegend": "%",
+            "output": "5",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 22,
+            "width": 1.0,
+            "defaultLegend": "6",
+            "shiftLegend": "^",
+            "output": "↑",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 26,
+            "width": 1.0,
+            "defaultLegend": "7",
+            "shiftLegend": "&",
+            "output": "↓",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 28,
+            "width": 1.0,
+            "defaultLegend": "8",
+            "shiftLegend": "*",
+            "output": "×",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 25,
+            "width": 1.0,
+            "defaultLegend": "9",
+            "shiftLegend": "(",
+            "output": "∞",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 29,
+            "width": 1.0,
+            "defaultLegend": "0",
+            "shiftLegend": ")",
+            "output": "∘",
+            "note": "dead key",
+            "deadState": "o"
+          },
+          {
+            "kind": "mapped",
+            "code": 27,
+            "width": 1.0,
+            "defaultLegend": "-",
+            "shiftLegend": "_",
+            "output": "-",
+            "note": "dead key",
+            "deadState": "-"
+          },
+          {
+            "kind": "mapped",
+            "code": 24,
+            "width": 1.0,
+            "defaultLegend": "=",
+            "shiftLegend": "+",
+            "output": "=",
+            "note": "dead key",
+            "deadState": "="
+          },
+          {
+            "kind": "fixed",
+            "label": "delete",
+            "width": 1.9
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "tab",
+            "width": 1.5
+          },
+          {
+            "kind": "mapped",
+            "code": 12,
+            "width": 1.0,
+            "defaultLegend": "q",
+            "shiftLegend": "Q",
+            "output": "q",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 13,
+            "width": 1.0,
+            "defaultLegend": "w",
+            "shiftLegend": "W",
+            "output": "ω",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 14,
+            "width": 1.0,
+            "defaultLegend": "e",
+            "shiftLegend": "E",
+            "output": "ε",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 15,
+            "width": 1.0,
+            "defaultLegend": "r",
+            "shiftLegend": "R",
+            "output": "ρ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 17,
+            "width": 1.0,
+            "defaultLegend": "t",
+            "shiftLegend": "T",
+            "output": "τ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 16,
+            "width": 1.0,
+            "defaultLegend": "y",
+            "shiftLegend": "Y",
+            "output": "ψ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 32,
+            "width": 1.0,
+            "defaultLegend": "u",
+            "shiftLegend": "U",
+            "output": "υ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 34,
+            "width": 1.0,
+            "defaultLegend": "i",
+            "shiftLegend": "I",
+            "output": "ι",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 31,
+            "width": 1.0,
+            "defaultLegend": "o",
+            "shiftLegend": "O",
+            "output": "θ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 35,
+            "width": 1.0,
+            "defaultLegend": "p",
+            "shiftLegend": "P",
+            "output": "π",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 33,
+            "width": 1.0,
+            "defaultLegend": "[",
+            "shiftLegend": "{",
+            "output": "⌊",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 30,
+            "width": 1.0,
+            "defaultLegend": "]",
+            "shiftLegend": "}",
+            "output": "⌋",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 42,
+            "width": 1.3,
+            "defaultLegend": "\\",
+            "shiftLegend": "|",
+            "output": "∨",
+            "note": "",
+            "deadState": null
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "caps",
+            "width": 1.8
+          },
+          {
+            "kind": "mapped",
+            "code": 0,
+            "width": 1.0,
+            "defaultLegend": "a",
+            "shiftLegend": "A",
+            "output": "α",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 1,
+            "width": 1.0,
+            "defaultLegend": "s",
+            "shiftLegend": "S",
+            "output": "σ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 2,
+            "width": 1.0,
+            "defaultLegend": "d",
+            "shiftLegend": "D",
+            "output": "δ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 3,
+            "width": 1.0,
+            "defaultLegend": "f",
+            "shiftLegend": "F",
+            "output": "φ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 5,
+            "width": 1.0,
+            "defaultLegend": "g",
+            "shiftLegend": "G",
+            "output": "γ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 4,
+            "width": 1.0,
+            "defaultLegend": "h",
+            "shiftLegend": "H",
+            "output": "η",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 38,
+            "width": 1.0,
+            "defaultLegend": "j",
+            "shiftLegend": "J",
+            "output": "j",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 40,
+            "width": 1.0,
+            "defaultLegend": "k",
+            "shiftLegend": "K",
+            "output": "κ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 37,
+            "width": 1.0,
+            "defaultLegend": "l",
+            "shiftLegend": "L",
+            "output": "λ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 41,
+            "width": 1.0,
+            "defaultLegend": ";",
+            "shiftLegend": ":",
+            "output": "…",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 39,
+            "width": 1.0,
+            "defaultLegend": "'",
+            "shiftLegend": "\"",
+            "output": "”",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "fixed",
+            "label": "return",
+            "width": 2.1
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "shift",
+            "width": 2.2
+          },
+          {
+            "kind": "mapped",
+            "code": 6,
+            "width": 1.0,
+            "defaultLegend": "z",
+            "shiftLegend": "Z",
+            "output": "ζ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 7,
+            "width": 1.0,
+            "defaultLegend": "x",
+            "shiftLegend": "X",
+            "output": "ξ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 8,
+            "width": 1.0,
+            "defaultLegend": "c",
+            "shiftLegend": "C",
+            "output": "χ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 9,
+            "width": 1.0,
+            "defaultLegend": "v",
+            "shiftLegend": "V",
+            "output": "√",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 11,
+            "width": 1.0,
+            "defaultLegend": "b",
+            "shiftLegend": "B",
+            "output": "β",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 45,
+            "width": 1.0,
+            "defaultLegend": "n",
+            "shiftLegend": "N",
+            "output": "ν",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 46,
+            "width": 1.0,
+            "defaultLegend": "m",
+            "shiftLegend": "M",
+            "output": "μ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 43,
+            "width": 1.0,
+            "defaultLegend": ",",
+            "shiftLegend": "<",
+            "output": "．",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 47,
+            "width": 1.0,
+            "defaultLegend": ".",
+            "shiftLegend": "gt",
+            "output": "·",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 44,
+            "width": 1.0,
+            "defaultLegend": "/",
+            "shiftLegend": "?",
+            "output": "/",
+            "note": "dead key",
+            "deadState": "fslash"
+          },
+          {
+            "kind": "fixed",
+            "label": "shift",
+            "width": 2.7
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "fn",
+            "width": 1.2
+          },
+          {
+            "kind": "fixed",
+            "label": "control",
+            "width": 1.3
+          },
+          {
+            "kind": "fixed",
+            "label": "option",
+            "width": 1.3
+          },
+          {
+            "kind": "fixed",
+            "label": "command",
+            "width": 1.5
+          },
+          {
+            "kind": "fixed",
+            "label": "space",
+            "width": 6.1
+          },
+          {
+            "kind": "fixed",
+            "label": "command",
+            "width": 1.5
+          },
+          {
+            "kind": "fixed",
+            "label": "option",
+            "width": 1.3
+          }
+        ]
+      ]
+    },
+    {
+      "id": "option_shift",
+      "title": "Option + Shift",
+      "rows": [
+        [
+          {
+            "kind": "mapped",
+            "code": 50,
+            "width": 1.0,
+            "defaultLegend": "`",
+            "shiftLegend": "~",
+            "output": "¬",
+            "note": "dead key",
+            "deadState": "~"
+          },
+          {
+            "kind": "mapped",
+            "code": 18,
+            "width": 1.0,
+            "defaultLegend": "1",
+            "shiftLegend": "!",
+            "output": "!",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 19,
+            "width": 1.0,
+            "defaultLegend": "2",
+            "shiftLegend": "@",
+            "output": "²",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 20,
+            "width": 1.0,
+            "defaultLegend": "3",
+            "shiftLegend": "£",
+            "output": "³",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 21,
+            "width": 1.0,
+            "defaultLegend": "4",
+            "shiftLegend": "$",
+            "output": "$",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 23,
+            "width": 1.0,
+            "defaultLegend": "5",
+            "shiftLegend": "%",
+            "output": "%",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 22,
+            "width": 1.0,
+            "defaultLegend": "6",
+            "shiftLegend": "^",
+            "output": "⇑",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 26,
+            "width": 1.0,
+            "defaultLegend": "7",
+            "shiftLegend": "&",
+            "output": "⇓",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 28,
+            "width": 1.0,
+            "defaultLegend": "8",
+            "shiftLegend": "*",
+            "output": "∗",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 25,
+            "width": 1.0,
+            "defaultLegend": "9",
+            "shiftLegend": "(",
+            "output": "⊂",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 29,
+            "width": 1.0,
+            "defaultLegend": "0",
+            "shiftLegend": ")",
+            "output": "⊃",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 27,
+            "width": 1.0,
+            "defaultLegend": "-",
+            "shiftLegend": "_",
+            "output": "_",
+            "note": "dead key",
+            "deadState": "_"
+          },
+          {
+            "kind": "mapped",
+            "code": 24,
+            "width": 1.0,
+            "defaultLegend": "=",
+            "shiftLegend": "+",
+            "output": "≝",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "fixed",
+            "label": "delete",
+            "width": 1.9
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "tab",
+            "width": 1.5
+          },
+          {
+            "kind": "mapped",
+            "code": 12,
+            "width": 1.0,
+            "defaultLegend": "q",
+            "shiftLegend": "Q",
+            "output": "ℚ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 13,
+            "width": 1.0,
+            "defaultLegend": "w",
+            "shiftLegend": "W",
+            "output": "Ω",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 14,
+            "width": 1.0,
+            "defaultLegend": "e",
+            "shiftLegend": "E",
+            "output": "∃",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 15,
+            "width": 1.0,
+            "defaultLegend": "r",
+            "shiftLegend": "R",
+            "output": "ℝ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 17,
+            "width": 1.0,
+            "defaultLegend": "t",
+            "shiftLegend": "T",
+            "output": "∴",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 16,
+            "width": 1.0,
+            "defaultLegend": "y",
+            "shiftLegend": "Y",
+            "output": "Ψ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 32,
+            "width": 1.0,
+            "defaultLegend": "u",
+            "shiftLegend": "U",
+            "output": "∪",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 34,
+            "width": 1.0,
+            "defaultLegend": "i",
+            "shiftLegend": "I",
+            "output": "∩",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 31,
+            "width": 1.0,
+            "defaultLegend": "o",
+            "shiftLegend": "O",
+            "output": "Θ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 35,
+            "width": 1.0,
+            "defaultLegend": "p",
+            "shiftLegend": "P",
+            "output": "Π",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 33,
+            "width": 1.0,
+            "defaultLegend": "[",
+            "shiftLegend": "{",
+            "output": "⌈",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 30,
+            "width": 1.0,
+            "defaultLegend": "]",
+            "shiftLegend": "}",
+            "output": "⌉",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 42,
+            "width": 1.3,
+            "defaultLegend": "\\",
+            "shiftLegend": "|",
+            "output": "｜",
+            "note": "dead key",
+            "deadState": "|"
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "caps",
+            "width": 1.8
+          },
+          {
+            "kind": "mapped",
+            "code": 0,
+            "width": 1.0,
+            "defaultLegend": "a",
+            "shiftLegend": "A",
+            "output": "∀",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 1,
+            "width": 1.0,
+            "defaultLegend": "s",
+            "shiftLegend": "S",
+            "output": "Σ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 2,
+            "width": 1.0,
+            "defaultLegend": "d",
+            "shiftLegend": "D",
+            "output": "Δ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 3,
+            "width": 1.0,
+            "defaultLegend": "f",
+            "shiftLegend": "F",
+            "output": "Φ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 5,
+            "width": 1.0,
+            "defaultLegend": "g",
+            "shiftLegend": "G",
+            "output": "Γ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 4,
+            "width": 1.0,
+            "defaultLegend": "h",
+            "shiftLegend": "H",
+            "output": "H",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 38,
+            "width": 1.0,
+            "defaultLegend": "j",
+            "shiftLegend": "J",
+            "output": "J",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 40,
+            "width": 1.0,
+            "defaultLegend": "k",
+            "shiftLegend": "K",
+            "output": "K",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 37,
+            "width": 1.0,
+            "defaultLegend": "l",
+            "shiftLegend": "L",
+            "output": "Λ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 41,
+            "width": 1.0,
+            "defaultLegend": ";",
+            "shiftLegend": ":",
+            "output": "∈",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 39,
+            "width": 1.0,
+            "defaultLegend": "'",
+            "shiftLegend": "\"",
+            "output": "\"",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "fixed",
+            "label": "return",
+            "width": 2.1
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "shift",
+            "width": 2.2
+          },
+          {
+            "kind": "mapped",
+            "code": 6,
+            "width": 1.0,
+            "defaultLegend": "z",
+            "shiftLegend": "Z",
+            "output": "ℤ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 7,
+            "width": 1.0,
+            "defaultLegend": "x",
+            "shiftLegend": "X",
+            "output": "Ξ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 8,
+            "width": 1.0,
+            "defaultLegend": "c",
+            "shiftLegend": "C",
+            "output": "ℂ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 9,
+            "width": 1.0,
+            "defaultLegend": "v",
+            "shiftLegend": "V",
+            "output": "∇",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 11,
+            "width": 1.0,
+            "defaultLegend": "b",
+            "shiftLegend": "B",
+            "output": "∵",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 45,
+            "width": 1.0,
+            "defaultLegend": "n",
+            "shiftLegend": "N",
+            "output": "ℕ",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 46,
+            "width": 1.0,
+            "defaultLegend": "m",
+            "shiftLegend": "M",
+            "output": "M",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 43,
+            "width": 1.0,
+            "defaultLegend": ",",
+            "shiftLegend": "<",
+            "output": "〈",
+            "note": "dead key",
+            "deadState": "lt"
+          },
+          {
+            "kind": "mapped",
+            "code": 47,
+            "width": 1.0,
+            "defaultLegend": ".",
+            "shiftLegend": "gt",
+            "output": "〉",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "mapped",
+            "code": 44,
+            "width": 1.0,
+            "defaultLegend": "/",
+            "shiftLegend": "?",
+            "output": "÷",
+            "note": "",
+            "deadState": null
+          },
+          {
+            "kind": "fixed",
+            "label": "shift",
+            "width": 2.7
+          }
+        ],
+        [
+          {
+            "kind": "fixed",
+            "label": "fn",
+            "width": 1.2
+          },
+          {
+            "kind": "fixed",
+            "label": "control",
+            "width": 1.3
+          },
+          {
+            "kind": "fixed",
+            "label": "option",
+            "width": 1.3
+          },
+          {
+            "kind": "fixed",
+            "label": "command",
+            "width": 1.5
+          },
+          {
+            "kind": "fixed",
+            "label": "space",
+            "width": 6.1
+          },
+          {
+            "kind": "fixed",
+            "label": "command",
+            "width": 1.5
+          },
+          {
+            "kind": "fixed",
+            "label": "option",
+            "width": 1.3
+          }
+        ]
+      ]
+    }
+  ],
+  "deadKeys": [
+    {
+      "shortcut": "Option 0",
+      "display": "∘",
+      "state": "o",
+      "description": "circled operator chain",
+      "examples": "⊛, ⊕, ⊖, ⊙, ⊘, ⊗"
+    },
+    {
+      "shortcut": "Option -",
+      "display": "-",
+      "state": "-",
+      "description": "arrow and turnstile chain",
+      "examples": "–, →"
+    },
+    {
+      "shortcut": "Option =",
+      "display": "=",
+      "state": "=",
+      "description": "double-arrow and equivalence chain",
+      "examples": "≡, ⇒, ≠"
+    },
+    {
+      "shortcut": "Option /",
+      "display": "/",
+      "state": "fslash",
+      "description": "negated symbol chain",
+      "examples": "∅, ≠, ∄, ⫛, ∧, ∤, ∉"
+    },
+    {
+      "shortcut": "Option + Shift ~",
+      "display": "¬",
+      "state": "~",
+      "description": "approximation and squiggle chain",
+      "examples": "⇝, ≈"
+    },
+    {
+      "shortcut": "Option + Shift _",
+      "display": "_",
+      "state": "_",
+      "description": "underbar relation chain",
+      "examples": "≤, ⊆, ⊇, ⟂, ≥"
+    },
+    {
+      "shortcut": "Option + Shift |",
+      "display": "｜",
+      "state": "|",
+      "description": "bar, turnstile, and maps-to chain",
+      "examples": "⊦, ⊧, ⟦, ⟧, ⊥, ▷"
+    },
+    {
+      "shortcut": "Option + Shift <",
+      "display": "〈",
+      "state": "lt",
+      "description": "left-angle and left-arrow chain",
+      "examples": "←, ⇐, ≤, ◁, ◇"
+    }
+  ]
+}
