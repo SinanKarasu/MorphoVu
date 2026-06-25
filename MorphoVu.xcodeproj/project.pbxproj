@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B10000000000000000000001 /* LispPadCore in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000001 /* LispPadCore */; };
-		B10000000000000000000002 /* ManifoldKit in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000002 /* ManifoldKit */; };
-		B10000000000000000000003 /* TektonParsers in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000003 /* TektonParsers */; };
 		B10000000000000000000004 /* CPPSymEngine in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000004 /* CPPSymEngine */; };
+		B30000000000000000000014 /* LispPadCore in Frameworks */ = {isa = PBXBuildFile; productRef = B30000000000000000000013 /* LispPadCore */; };
 		F795E8092FEB70CA00D972D7 /* DrJitKit in Frameworks */ = {isa = PBXBuildFile; productRef = F795E8082FEB70CA00D972D7 /* DrJitKit */; };
+		F7FD143E2FEDC1F6002F7E48 /* ManifoldKit in Frameworks */ = {isa = PBXBuildFile; productRef = F7FD143D2FEDC1F6002F7E48 /* ManifoldKit */; };
+		F7FD14412FEDC217002F7E48 /* TektonParsers in Frameworks */ = {isa = PBXBuildFile; productRef = F7FD14402FEDC217002F7E48 /* TektonParsers */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +31,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7FD143E2FEDC1F6002F7E48 /* ManifoldKit in Frameworks */,
 				B10000000000000000000004 /* CPPSymEngine in Frameworks */,
-				B10000000000000000000001 /* LispPadCore in Frameworks */,
+				F7FD14412FEDC217002F7E48 /* TektonParsers in Frameworks */,
+				B30000000000000000000014 /* LispPadCore in Frameworks */,
 				F795E8092FEB70CA00D972D7 /* DrJitKit in Frameworks */,
-				B10000000000000000000002 /* ManifoldKit in Frameworks */,
-				B10000000000000000000003 /* TektonParsers in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,10 +80,10 @@
 			name = MorphoVu;
 			packageProductDependencies = (
 				B40000000000000000000004 /* CPPSymEngine */,
-				B40000000000000000000001 /* LispPadCore */,
-				B40000000000000000000002 /* ManifoldKit */,
-				B40000000000000000000003 /* TektonParsers */,
+				B30000000000000000000013 /* LispPadCore */,
 				F795E8082FEB70CA00D972D7 /* DrJitKit */,
+				F7FD143D2FEDC1F6002F7E48 /* ManifoldKit */,
+				F7FD14402FEDC217002F7E48 /* TektonParsers */,
 			);
 			productName = MorphoVu;
 			productReference = F71EBAA62F7B181200FDC9C2 /* MorphoVu.app */;
@@ -115,10 +115,10 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				B30000000000000000000004 /* XCLocalSwiftPackageReference "../../Packages/CPPSymEngine" */,
-				B30000000000000000000001 /* XCLocalSwiftPackageReference "../../Packages/LispPadCore" */,
-				B30000000000000000000002 /* XCLocalSwiftPackageReference "../../Packages/ManifoldCore" */,
-				B30000000000000000000003 /* XCLocalSwiftPackageReference "../../Packages/TektonParsers" */,
-				F795E8072FEB70CA00D972D7 /* XCLocalSwiftPackageReference "../../Packages/DrJitCore" */,
+				F7FD143C2FEDC1F6002F7E48 /* XCRemoteSwiftPackageReference "ManifoldCore" */,
+				F7FD143F2FEDC217002F7E48 /* XCRemoteSwiftPackageReference "TektonParsers" */,
+				B30000000000000000000011 /* XCRemoteSwiftPackageReference "DrJitCore" */,
+				B30000000000000000000012 /* XCRemoteSwiftPackageReference "LispPadCore" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F71EBAA72F7B181200FDC9C2 /* Products */;
@@ -406,44 +406,48 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		B30000000000000000000001 /* XCLocalSwiftPackageReference "../../Packages/LispPadCore" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../Packages/LispPadCore;
-		};
-		B30000000000000000000002 /* XCLocalSwiftPackageReference "../../Packages/ManifoldCore" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../Packages/ManifoldCore;
-		};
-		B30000000000000000000003 /* XCLocalSwiftPackageReference "../../Packages/TektonParsers" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../Packages/TektonParsers;
-		};
 		B30000000000000000000004 /* XCLocalSwiftPackageReference "../../Packages/CPPSymEngine" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../../Packages/CPPSymEngine;
 		};
-		F795E8072FEB70CA00D972D7 /* XCLocalSwiftPackageReference "../../Packages/DrJitCore" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../Packages/DrJitCore;
-		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		F7FD143C2FEDC1F6002F7E48 /* XCRemoteSwiftPackageReference "ManifoldCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SinanKarasu/ManifoldCore.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F7FD143F2FEDC217002F7E48 /* XCRemoteSwiftPackageReference "TektonParsers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SinanKarasu/TektonParsers.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B30000000000000000000011 /* XCRemoteSwiftPackageReference "DrJitCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SinanKarasu/DrJitCore.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B30000000000000000000012 /* XCRemoteSwiftPackageReference "LispPadCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SinanKarasu/LispPadCore.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		B40000000000000000000001 /* LispPadCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B30000000000000000000001 /* XCLocalSwiftPackageReference "../../Packages/LispPadCore" */;
-			productName = LispPadCore;
-		};
-		B40000000000000000000002 /* ManifoldKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B30000000000000000000002 /* XCLocalSwiftPackageReference "../../Packages/ManifoldCore" */;
-			productName = ManifoldKit;
-		};
-		B40000000000000000000003 /* TektonParsers */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B30000000000000000000003 /* XCLocalSwiftPackageReference "../../Packages/TektonParsers" */;
-			productName = TektonParsers;
-		};
 		B40000000000000000000004 /* CPPSymEngine */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B30000000000000000000004 /* XCLocalSwiftPackageReference "../../Packages/CPPSymEngine" */;
@@ -451,7 +455,23 @@
 		};
 		F795E8082FEB70CA00D972D7 /* DrJitKit */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = B30000000000000000000011 /* XCRemoteSwiftPackageReference "DrJitCore" */;
 			productName = DrJitKit;
+		};
+		B30000000000000000000013 /* LispPadCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B30000000000000000000012 /* XCRemoteSwiftPackageReference "LispPadCore" */;
+			productName = LispPadCore;
+		};
+		F7FD143D2FEDC1F6002F7E48 /* ManifoldKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7FD143C2FEDC1F6002F7E48 /* XCRemoteSwiftPackageReference "ManifoldCore" */;
+			productName = ManifoldKit;
+		};
+		F7FD14402FEDC217002F7E48 /* TektonParsers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7FD143F2FEDC217002F7E48 /* XCRemoteSwiftPackageReference "TektonParsers" */;
+			productName = TektonParsers;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
