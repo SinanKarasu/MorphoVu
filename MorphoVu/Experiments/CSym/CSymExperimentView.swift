@@ -140,6 +140,117 @@ struct CSymExperimentView: View {
     }
 }
 
+#elseif os(visionOS)
+
+struct CSymExperimentView: View {
+    @State private var input       = "y = \\sin(x)"
+    @State private var aValue      = 1.0
+    @State private var bValue      = 0.0
+    @State private var gridOpacity = 1.0
+    @State private var status      = ""
+    @State private var parseError: String? = nil
+    @State private var plotData: LinePlotData? = nil
+
+    var body: some View {
+        HStack(alignment: .top, spacing: 0) {
+            controlPanel
+                .frame(width: 290)
+                .padding(20)
+            Divider()
+            CSymPlotView(plot: plotData, gridOpacity: Float(gridOpacity))
+        }
+        .onAppear { replot() }
+    }
+
+    // MARK: - Control panel
+
+    private var controlPanel: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text("CSym Experiment")
+                .font(.title2.bold())
+            Text("GPU-accelerated math on Metal · drag to orbit")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+
+            TextField("Expression  e.g. y = \\sin(x)", text: $input)
+                .textFieldStyle(.roundedBorder)
+                .pythonTextInputTraits()
+                .onSubmit { replot() }
+
+            paramSlider("a", value: $aValue, range: -10...10, step: 0.1)
+            paramSlider("b", value: $bValue, range: -10...10, step: 0.1)
+            paramSlider("grid", value: $gridOpacity, range: 0...1, step: 0.01)
+
+            Button("Plot") { replot() }
+                .keyboardShortcut(.defaultAction)
+
+            Group {
+                if let error = parseError {
+                    Text(error)
+                        .font(.caption)
+                        .foregroundStyle(.red)
+                        .lineLimit(3)
+                } else if !status.isEmpty {
+                    Text(status)
+                        .font(.system(.caption2, design: .monospaced))
+                        .foregroundStyle(.secondary)
+                        .lineLimit(2)
+                }
+            }
+
+            Spacer()
+        }
+    }
+
+    @ViewBuilder
+    private func paramSlider(
+        _ label: String,
+        value: Binding<Double>,
+        range: ClosedRange<Double>,
+        step: Double
+    ) -> some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text("\(label) = \(value.wrappedValue, format: .number.precision(.fractionLength(2)))")
+                .font(.system(.caption, design: .monospaced))
+            // onEditingChanged fires once when the finger lifts, not on every tick.
+            // This prevents flooding the GPU with hundreds of DrJit evaluations
+            // while dragging and avoids memory pressure from rebuilding 400+ entities.
+            Slider(value: value, in: range, step: step) { editing in
+                if !editing { replot() }
+            }
+        }
+    }
+
+    // MARK: - Evaluation
+
+    private func replot() {
+        do {
+            let model = try LineExpressionModel.parse(input)
+            let data  = try model.sampleLine3D(
+                a: aValue, b: bValue,
+                xMin: -10, xMax: 10, sampleCount: 180
+            )
+            plotData   = data
+            parseError = nil
+            status     = statusText(for: data)
+        } catch {
+            plotData   = nil
+            parseError = error.localizedDescription
+            status     = ""
+        }
+    }
+
+    private func statusText(for plot: LinePlotData) -> String {
+        String(
+            format: "%@ | y ≈ %.3fx + %.3f | %d pts",
+            plot.backend,
+            plot.estimatedSlope,
+            plot.estimatedIntercept,
+            plot.points.count
+        )
+    }
+}
+
 #else
 
 struct CSymExperimentView: View {
@@ -147,8 +258,7 @@ struct CSymExperimentView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("CSym Experiment")
                 .font(.title2.bold())
-
-            Text("The AmbientAtlas SceneKit experiment is available on macOS first. The view is parked here so the tab structure is ready while we decide how to port it to the spatial renderer.")
+            Text("Available on macOS and visionOS.")
                 .foregroundStyle(.secondary)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
