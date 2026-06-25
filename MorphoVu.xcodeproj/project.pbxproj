@@ -11,31 +11,11 @@
 		B10000000000000000000002 /* ManifoldKit in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000002 /* ManifoldKit */; };
 		B10000000000000000000003 /* TektonParsers in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000003 /* TektonParsers */; };
 		B10000000000000000000004 /* CPPSymEngine in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000004 /* CPPSymEngine */; };
-		F795E8022FEB51DC00D972D7 /* MorphoVuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795E8012FEB51DC00D972D7 /* MorphoVuTests.swift */; };
 		F795E8092FEB70CA00D972D7 /* DrJitKit in Frameworks */ = {isa = PBXBuildFile; productRef = F795E8082FEB70CA00D972D7 /* DrJitKit */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F71EBAB42F7B181300FDC9C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F71EBA9E2F7B181100FDC9C2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F71EBAA52F7B181200FDC9C2;
-			remoteInfo = MorphoVu;
-		};
-		F71EBABE2F7B181300FDC9C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F71EBA9E2F7B181100FDC9C2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F71EBAA52F7B181200FDC9C2;
-			remoteInfo = MorphoVu;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		F71EBAA62F7B181200FDC9C2 /* MorphoVu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorphoVu.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F71EBAB32F7B181300FDC9C2 /* MorphoVuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorphoVuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F71EBABD2F7B181300FDC9C2 /* MorphoVuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorphoVuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F795E8012FEB51DC00D972D7 /* MorphoVuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphoVuTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,20 +50,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F71EBAB02F7B181300FDC9C2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F71EBABA2F7B181300FDC9C2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,8 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				F71EBAA62F7B181200FDC9C2 /* MorphoVu.app */,
-				F71EBAB32F7B181300FDC9C2 /* MorphoVuTests.xctest */,
-				F71EBABD2F7B181300FDC9C2 /* MorphoVuUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,52 +103,6 @@
 			productReference = F71EBAA62F7B181200FDC9C2 /* MorphoVu.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F71EBAB22F7B181300FDC9C2 /* MorphoVuTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F71EBACA2F7B181300FDC9C2 /* Build configuration list for PBXNativeTarget "MorphoVuTests" */;
-			buildPhases = (
-				F71EBAAF2F7B181300FDC9C2 /* Sources */,
-				F71EBAB02F7B181300FDC9C2 /* Frameworks */,
-				F71EBAB12F7B181300FDC9C2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F71EBAB52F7B181300FDC9C2 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F71EBAB62F7B181300FDC9C2 /* MorphoVuTests */,
-			);
-			name = MorphoVuTests;
-			packageProductDependencies = (
-			);
-			productName = MorphoVuTests;
-			productReference = F71EBAB32F7B181300FDC9C2 /* MorphoVuTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F71EBABC2F7B181300FDC9C2 /* MorphoVuUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F71EBACD2F7B181300FDC9C2 /* Build configuration list for PBXNativeTarget "MorphoVuUITests" */;
-			buildPhases = (
-				F71EBAB92F7B181300FDC9C2 /* Sources */,
-				F71EBABA2F7B181300FDC9C2 /* Frameworks */,
-				F71EBABB2F7B181300FDC9C2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F71EBABF2F7B181300FDC9C2 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F71EBAC02F7B181300FDC9C2 /* MorphoVuUITests */,
-			);
-			name = MorphoVuUITests;
-			packageProductDependencies = (
-			);
-			productName = MorphoVuUITests;
-			productReference = F71EBABD2F7B181300FDC9C2 /* MorphoVuUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,14 +115,6 @@
 				TargetAttributes = {
 					F71EBAA52F7B181200FDC9C2 = {
 						CreatedOnToolsVersion = 26.4;
-					};
-					F71EBAB22F7B181300FDC9C2 = {
-						CreatedOnToolsVersion = 26.4;
-						TestTargetID = F71EBAA52F7B181200FDC9C2;
-					};
-					F71EBABC2F7B181300FDC9C2 = {
-						CreatedOnToolsVersion = 26.4;
-						TestTargetID = F71EBAA52F7B181200FDC9C2;
 					};
 				};
 			};
@@ -230,28 +140,12 @@
 			projectRoot = "";
 			targets = (
 				F71EBAA52F7B181200FDC9C2 /* MorphoVu */,
-				F71EBAB22F7B181300FDC9C2 /* MorphoVuTests */,
-				F71EBABC2F7B181300FDC9C2 /* MorphoVuUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F71EBAA42F7B181200FDC9C2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F71EBAB12F7B181300FDC9C2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F71EBABB2F7B181300FDC9C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,35 +183,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F71EBAAF2F7B181300FDC9C2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F795E8022FEB51DC00D972D7 /* MorphoVuTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F71EBAB92F7B181300FDC9C2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F71EBAB52F7B181300FDC9C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F71EBAA52F7B181200FDC9C2 /* MorphoVu */;
-			targetProxy = F71EBAB42F7B181300FDC9C2 /* PBXContainerItemProxy */;
-		};
-		F71EBABF2F7B181300FDC9C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F71EBAA52F7B181200FDC9C2 /* MorphoVu */;
-			targetProxy = F71EBABE2F7B181300FDC9C2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F71EBAC52F7B181300FDC9C2 /* Debug */ = {
@@ -530,112 +396,6 @@
 			};
 			name = Release;
 		};
-		F71EBACB2F7B181300FDC9C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4HVP45GV3U;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
-				MACOSX_DEPLOYMENT_TARGET = 26.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.bozuk.MorphoVuTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OBJC_INTEROP_MODE = objcxx;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MorphoVu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MorphoVu";
-				XROS_DEPLOYMENT_TARGET = 26.4;
-			};
-			name = Debug;
-		};
-		F71EBACC2F7B181300FDC9C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4HVP45GV3U;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
-				MACOSX_DEPLOYMENT_TARGET = 26.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.bozuk.MorphoVuTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OBJC_INTEROP_MODE = objcxx;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MorphoVu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MorphoVu";
-				XROS_DEPLOYMENT_TARGET = 26.4;
-			};
-			name = Release;
-		};
-		F71EBACE2F7B181300FDC9C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4HVP45GV3U;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
-				MACOSX_DEPLOYMENT_TARGET = 26.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.bozuk.MorphoVuUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OBJC_INTEROP_MODE = objcxx;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = MorphoVu;
-				XROS_DEPLOYMENT_TARGET = 26.4;
-			};
-			name = Debug;
-		};
-		F71EBACF2F7B181300FDC9C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4HVP45GV3U;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
-				MACOSX_DEPLOYMENT_TARGET = 26.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.bozuk.MorphoVuUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OBJC_INTEROP_MODE = objcxx;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = MorphoVu;
-				XROS_DEPLOYMENT_TARGET = 26.4;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -653,24 +413,6 @@
 			buildConfigurations = (
 				F71EBAC82F7B181300FDC9C2 /* Debug */,
 				F71EBAC92F7B181300FDC9C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F71EBACA2F7B181300FDC9C2 /* Build configuration list for PBXNativeTarget "MorphoVuTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F71EBACB2F7B181300FDC9C2 /* Debug */,
-				F71EBACC2F7B181300FDC9C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F71EBACD2F7B181300FDC9C2 /* Build configuration list for PBXNativeTarget "MorphoVuUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F71EBACE2F7B181300FDC9C2 /* Debug */,
-				F71EBACF2F7B181300FDC9C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
