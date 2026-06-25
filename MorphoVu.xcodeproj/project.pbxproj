@@ -24,16 +24,6 @@
 			path = MorphoVu;
 			sourceTree = "<group>";
 		};
-		F71EBAB62F7B181300FDC9C2 /* MorphoVuTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MorphoVuTests;
-			sourceTree = "<group>";
-		};
-		F71EBAC02F7B181300FDC9C2 /* MorphoVuUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MorphoVuUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +45,6 @@
 		F71EBA9D2F7B181100FDC9C2 = {
 			isa = PBXGroup;
 			children = (
-				F71EBAB62F7B181300FDC9C2 /* MorphoVuTests */,
-				F71EBAC02F7B181300FDC9C2 /* MorphoVuUITests */,
 				F71EBAA72F7B181200FDC9C2 /* Products */,
 				F71EBAA82F7B181200FDC9C2 /* MorphoVu */,
 			);
