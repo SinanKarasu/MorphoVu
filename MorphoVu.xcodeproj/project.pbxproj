@@ -16,7 +16,6 @@
 
 /* Begin PBXFileReference section */
 		F71EBAA62F7B181200FDC9C2 /* MorphoVu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorphoVu.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F795E8012FEB51DC00D972D7 /* MorphoVuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphoVuTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -56,7 +55,6 @@
 		F71EBA9D2F7B181100FDC9C2 = {
 			isa = PBXGroup;
 			children = (
-				F795E8012FEB51DC00D972D7 /* MorphoVuTests.swift */,
 				F71EBAB62F7B181300FDC9C2 /* MorphoVuTests */,
 				F71EBAC02F7B181300FDC9C2 /* MorphoVuUITests */,
 				F71EBAA72F7B181200FDC9C2 /* Products */,
