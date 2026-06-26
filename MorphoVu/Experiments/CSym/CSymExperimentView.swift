@@ -150,6 +150,7 @@ struct CSymExperimentView: View {
     @State private var status      = ""
     @State private var parseError: String? = nil
     @State private var plotData: LinePlotData? = nil
+    @State private var plotGeneration = 0
 
     var body: some View {
         HStack(alignment: .top, spacing: 0) {
@@ -157,7 +158,11 @@ struct CSymExperimentView: View {
                 .frame(width: 290)
                 .padding(20)
             Divider()
-            CSymPlotView(plot: plotData, gridOpacity: Float(gridOpacity))
+            CSymPlotView(
+                plot: plotData,
+                plotGeneration: plotGeneration,
+                gridOpacity: Float(gridOpacity)
+            )
         }
         .onAppear { replot() }
     }
@@ -233,10 +238,12 @@ struct CSymExperimentView: View {
             plotData   = data
             parseError = nil
             status     = statusText(for: data)
+            plotGeneration += 1
         } catch {
             plotData   = nil
             parseError = error.localizedDescription
             status     = ""
+            plotGeneration += 1
         }
     }
 

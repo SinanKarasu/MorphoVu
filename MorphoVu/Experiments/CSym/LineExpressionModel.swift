@@ -107,15 +107,15 @@ struct LineExpressionModel {
         ) {
             return drjitPlot
         }
-        // SymEngine: symbolic (macOS only) — gives derivative info; linear-only
-        #if os(macOS)
+        // SymEngine: symbolic fallback — gives derivative info; linear-only
+        #if os(macOS) || os(visionOS)
         if let symbolicPlot = try? sampleLine3DWithSymEngine(
             a: a, b: b, xMin: xMin, xMax: xMax, sampleCount: sampleCount
         ) {
             return symbolicPlot
         }
         #endif
-        // Numeric: CPU fallback; linear-only
+        // Numeric: CPU fallback; handles nonlinear expressions without GPU acceleration.
         return try sampleLine3DNumeric(a: a, b: b, xMin: xMin, xMax: xMax, sampleCount: sampleCount)
     }
 
@@ -132,17 +132,6 @@ struct LineExpressionModel {
 
         let evaluator = LaTeXMathNumericEvaluator(root: root, tokenTextByIndex: tokenTextByIndex)
 
-        let y0 = try evaluator.evaluate(variables: ["x": 0, "a": a, "b": b])
-        let y1 = try evaluator.evaluate(variables: ["x": 1, "a": a, "b": b])
-        let y2 = try evaluator.evaluate(variables: ["x": 2, "a": a, "b": b])
-
-        let slope = y1 - y0
-        let intercept = y0
-        let linearResidual = abs((y2 - y1) - slope)
-        if linearResidual > 1e-6 {
-            throw LineModelError.nonLinear(linearResidual)
-        }
-
         var points: [PlotPointN] = []
         points.reserveCapacity(sampleCount)
 
@@ -152,6 +141,10 @@ struct LineExpressionModel {
             let y = try evaluator.evaluate(variables: ["x": x, "a": a, "b": b])
             points.append(PlotPointN(x: x, y: y, z: 0, t: 0, w: 1))
         }
+
+        let dx = (xMax - xMin) / Double(sampleCount - 1)
+        let slope = dx != 0 ? (points[1].y - points[0].y) / dx : 0
+        let intercept = points[0].y - slope * points[0].x
 
         return LinePlotData(
             points: points,

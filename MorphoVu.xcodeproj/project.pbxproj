@@ -114,7 +114,7 @@
 			mainGroup = F71EBA9D2F7B181100FDC9C2;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				B30000000000000000000004 /* XCLocalSwiftPackageReference "../../Packages/CPPSymEngine" */,
+				B30000000000000000000004 /* XCRemoteSwiftPackageReference "CPPSymEngine" */,
 				F7FD143C2FEDC1F6002F7E48 /* XCRemoteSwiftPackageReference "ManifoldCore" */,
 				F7FD143F2FEDC217002F7E48 /* XCRemoteSwiftPackageReference "TektonParsers" */,
 				B30000000000000000000011 /* XCRemoteSwiftPackageReference "DrJitCore" */,
@@ -405,14 +405,15 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		B30000000000000000000004 /* XCLocalSwiftPackageReference "../../Packages/CPPSymEngine" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../Packages/CPPSymEngine;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
+		B30000000000000000000004 /* XCRemoteSwiftPackageReference "CPPSymEngine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SinanKarasu/CPPSymEngine.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		B30000000000000000000011 /* XCRemoteSwiftPackageReference "DrJitCore" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SinanKarasu/DrJitCore.git";
@@ -455,7 +456,7 @@
 		};
 		B40000000000000000000004 /* CPPSymEngine */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B30000000000000000000004 /* XCLocalSwiftPackageReference "../../Packages/CPPSymEngine" */;
+			package = B30000000000000000000004 /* XCRemoteSwiftPackageReference "CPPSymEngine" */;
 			productName = CPPSymEngine;
 		};
 		F795E8082FEB70CA00D972D7 /* DrJitKit */ = {

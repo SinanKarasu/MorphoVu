@@ -1,4 +1,4 @@
-#if os(macOS)
+#if os(macOS) || os(visionOS)
 @preconcurrency import Antlr4
 import CPPSymEngine
 import Foundation

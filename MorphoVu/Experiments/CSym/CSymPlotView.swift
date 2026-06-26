@@ -20,6 +20,7 @@ import simd
 
 struct CSymPlotView: View {
     let plot: LinePlotData?
+    let plotGeneration: Int
     let gridOpacity: Float
 
     // Orbit state
@@ -37,7 +38,7 @@ struct CSymPlotView: View {
     // Dirty flags — revision counters are @State (trigger update:); rendered
     // tracking uses a reference type so mutations don't cause a second re-render.
     @State private var baseRevision: Int = 0
-    @State private var plotRevision: Int = 0
+    @State private var plotDirtyRevision: Int = 0
     @State private var rendered = _RenderRevisions()
 
     // ── Scene constants (scene-space units; applied before sceneScale) ────────
@@ -64,8 +65,8 @@ struct CSymPlotView: View {
                 rendered.base = baseRevision
                 rebuildBase()
             }
-            if rendered.plot != plotRevision {
-                rendered.plot = plotRevision
+            if rendered.plot != plotDirtyRevision {
+                rendered.plot = plotDirtyRevision
                 rebuildPlot()
             }
         }
@@ -96,10 +97,10 @@ struct CSymPlotView: View {
         }
         .onAppear {
             baseRevision = 1
-            plotRevision = 1
+            plotDirtyRevision = 1
         }
         .onChange(of: gridOpacity) { _, _ in baseRevision += 1 }
-        .onChange(of: plot?.points.count) { _, _ in plotRevision += 1 }
+        .onChange(of: plotGeneration) { _, _ in plotDirtyRevision += 1 }
     }
 
     // MARK: - Camera
