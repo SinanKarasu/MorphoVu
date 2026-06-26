@@ -38,6 +38,7 @@ xcuserdata/
 # SwiftPM
 .build/
 .swiftpm/
+**/xcshareddata/swiftpm/Package.resolved
 
 # Xcode user state
 *.xcuserstate

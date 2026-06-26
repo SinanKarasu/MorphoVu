@@ -413,41 +413,46 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F7FD143C2FEDC1F6002F7E48 /* XCRemoteSwiftPackageReference "ManifoldCore" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SinanKarasu/ManifoldCore.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		F7FD143F2FEDC217002F7E48 /* XCRemoteSwiftPackageReference "TektonParsers" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SinanKarasu/TektonParsers.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 		B30000000000000000000011 /* XCRemoteSwiftPackageReference "DrJitCore" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SinanKarasu/DrJitCore.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 		B30000000000000000000012 /* XCRemoteSwiftPackageReference "LispPadCore" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SinanKarasu/LispPadCore.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				branch = main;
+				kind = branch;
+			};
+		};
+		F7FD143C2FEDC1F6002F7E48 /* XCRemoteSwiftPackageReference "ManifoldCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SinanKarasu/ManifoldCore.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F7FD143F2FEDC217002F7E48 /* XCRemoteSwiftPackageReference "TektonParsers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SinanKarasu/TektonParsers.git";
+			requirement = {
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B30000000000000000000013 /* LispPadCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B30000000000000000000012 /* XCRemoteSwiftPackageReference "LispPadCore" */;
+			productName = LispPadCore;
+		};
 		B40000000000000000000004 /* CPPSymEngine */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B30000000000000000000004 /* XCLocalSwiftPackageReference "../../Packages/CPPSymEngine" */;
@@ -457,11 +462,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B30000000000000000000011 /* XCRemoteSwiftPackageReference "DrJitCore" */;
 			productName = DrJitKit;
-		};
-		B30000000000000000000013 /* LispPadCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B30000000000000000000012 /* XCRemoteSwiftPackageReference "LispPadCore" */;
-			productName = LispPadCore;
 		};
 		F7FD143D2FEDC1F6002F7E48 /* ManifoldKit */ = {
 			isa = XCSwiftPackageProductDependency;
