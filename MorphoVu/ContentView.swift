@@ -34,6 +34,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("Runtime Lab", systemImage: "terminal")
                 }
+
+            KelvinCASRootView()
+                .tabItem {
+                    Label("Kelvin CAS", systemImage: "sum")
+                }
         }
         .tint(MorphoTheme.accent)
     }

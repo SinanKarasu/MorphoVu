@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B10000000000000000000004 /* CPPSymEngine in Frameworks */ = {isa = PBXBuildFile; productRef = B40000000000000000000004 /* CPPSymEngine */; };
 		B30000000000000000000014 /* LispPadCore in Frameworks */ = {isa = PBXBuildFile; productRef = B30000000000000000000013 /* LispPadCore */; };
+		B30000000000000000000016 /* KelvinGUI in Frameworks */ = {isa = PBXBuildFile; productRef = B30000000000000000000015 /* KelvinGUI */; };
 		F795E8092FEB70CA00D972D7 /* DrJitKit in Frameworks */ = {isa = PBXBuildFile; productRef = F795E8082FEB70CA00D972D7 /* DrJitKit */; };
 		F7FD143E2FEDC1F6002F7E48 /* ManifoldKit in Frameworks */ = {isa = PBXBuildFile; productRef = F7FD143D2FEDC1F6002F7E48 /* ManifoldKit */; };
 		F7FD14412FEDC217002F7E48 /* TektonParsers in Frameworks */ = {isa = PBXBuildFile; productRef = F7FD14402FEDC217002F7E48 /* TektonParsers */; };
@@ -36,6 +37,7 @@
 				F7FD14412FEDC217002F7E48 /* TektonParsers in Frameworks */,
 				B30000000000000000000014 /* LispPadCore in Frameworks */,
 				F795E8092FEB70CA00D972D7 /* DrJitKit in Frameworks */,
+				B30000000000000000000016 /* KelvinGUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,7 @@
 				F795E8082FEB70CA00D972D7 /* DrJitKit */,
 				F7FD143D2FEDC1F6002F7E48 /* ManifoldKit */,
 				F7FD14402FEDC217002F7E48 /* TektonParsers */,
+				B30000000000000000000015 /* KelvinGUI */,
 			);
 			productName = MorphoVu;
 			productReference = F71EBAA62F7B181200FDC9C2 /* MorphoVu.app */;
@@ -119,6 +122,7 @@
 				F7FD143F2FEDC217002F7E48 /* XCRemoteSwiftPackageReference "TektonParsers" */,
 				B30000000000000000000011 /* XCRemoteSwiftPackageReference "DrJitCore" */,
 				B30000000000000000000012 /* XCRemoteSwiftPackageReference "LispPadCore" */,
+				B30000000000000000000017 /* XCRemoteSwiftPackageReference "KelvinCAS" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F71EBAA72F7B181200FDC9C2 /* Products */;
@@ -430,6 +434,14 @@
 				kind = branch;
 			};
 		};
+		B30000000000000000000017 /* XCRemoteSwiftPackageReference "KelvinCAS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SinanKarasu/KelvinCAS.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		F7FD143C2FEDC1F6002F7E48 /* XCRemoteSwiftPackageReference "ManifoldCore" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SinanKarasu/ManifoldCore.git";
@@ -453,6 +465,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B30000000000000000000012 /* XCRemoteSwiftPackageReference "LispPadCore" */;
 			productName = LispPadCore;
+		};
+		B30000000000000000000015 /* KelvinGUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B30000000000000000000017 /* XCRemoteSwiftPackageReference "KelvinCAS" */;
+			productName = KelvinGUI;
 		};
 		B40000000000000000000004 /* CPPSymEngine */ = {
 			isa = XCSwiftPackageProductDependency;
